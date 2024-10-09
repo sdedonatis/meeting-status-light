@@ -27,5 +27,5 @@ How to build the hardware
 Upload the firmware to the indicator
 Compile java agent
 
-# Running
+## Running
 Run the client in java
