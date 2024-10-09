@@ -23,7 +23,7 @@ Animated GIF
 ## Building instructions
 How to build the hardware
 
-## instalation
+## Instalation
 Upload the firmware to the indicator
 Compile java agent
 
