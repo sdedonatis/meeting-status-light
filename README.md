@@ -1,4 +1,4 @@
-# status-light
+# meeting status light
 A status light indicator for Jabber, Teams or others meeting apps, so everyone knows if you are in a meeting or busy without asking you.
 
 In theory it can work with any meeting app that shows a color changing icon because the java agent running in the PC only looks for changes in color in that pixel (configurable).
