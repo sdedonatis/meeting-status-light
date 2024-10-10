@@ -1,0 +1,1 @@
+start C:\PROGRA~1\Java\jdk-11.0.13\bin\javaw -jar target/meeting-status-agent-0.0.1-SNAPSHOT-jar-with-dependencies.jar
