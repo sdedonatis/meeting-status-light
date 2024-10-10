@@ -3,12 +3,12 @@ A status light indicator for Jabber, Teams or others meeting apps, so everyone k
 
 In theory it can work with any meeting app that shows a color changing icon because the java agent running in the PC only looks for changes in color in that pixel (configurable).
 
-##Schematic
+## Schematic
 	PC (agent) --> usb-cable -->RP2040 --> Neopixels
 
 Animated GIF
 
-##BOM
+## BOM
 | Name                 | Quantity | Descriptions          |
 | -------------------- | :------: | ----------------------|
 | RP2040 Zero          |    1     |                       |
@@ -20,12 +20,12 @@ Animated GIF
 | Printed top          |    1     |Opaque filament        |
 | Printed indicator    |    1     |white or clear filament|
 
-##Building instructions
+## Building instructions
 How to build the hardware
 
-##instalation
+## Instalation
 Upload the firmware to the indicator
 Compile java agent
 
-#Running
+## Running
 Run the client in java
