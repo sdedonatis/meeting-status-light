@@ -1,4 +1,5 @@
 import machine
+from machine import Timer
 from neopixel import NeoPixel
 import time
 
@@ -7,8 +8,18 @@ NUM_LEDS = 4
 # Pin with the LED
 LED_PIN = 29
 
+#Turning leds off after x seconds
+def off_led_thread(self):
+    for led_num in range(NUM_LEDS):
+        led[led_num]= (0, 0, 0)
+        led.write ()
+    print("Leds off")
+
 #Instantiates a Neopixel in pin 29 with 4 leds
 led = NeoPixel(machine.Pin (LED_PIN), NUM_LEDS)
+
+#Timer
+tim = Timer()
 
 #Initial color (gray)
 for led_num in range(NUM_LEDS):
@@ -42,6 +53,7 @@ while True:
             for led_num in range(NUM_LEDS):
                 led[led_num] = (value1, value2, value3)
             led.write ()
+            tim.init(mode=Timer.ONE_SHOT, period=15000, callback=off_led_thread)
             
         except ValueError:
             print("Error: Couldn't convert value to numbers.")
